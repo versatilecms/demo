@@ -59,17 +59,7 @@
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover",
-        ],
-        "post-install-cmd": [
-            "@php artisan versatile:install",
-            "@php artisan versatile-posts:install",
-            "@php artisan versatile-pages:install",
-            "@php artisan versatile-forms:install",
-            "@php artisan versatile-portfolio:install",
-            "@php artisan versatile-frontend:install",
-            "@php artisan versatile-themes:install",
-            "@php artisan versatile:permissions admin"
+            "@php artisan package:discover"
         ]
     },
     "config": {
