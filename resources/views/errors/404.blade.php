@@ -1,0 +1,1 @@
+@include('v-theme::errors.404')

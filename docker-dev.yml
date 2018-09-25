@@ -1,0 +1,57 @@
+version: '2'
+
+services:
+
+  versatile.app:
+    image: codions/php:7.1-apache
+    container_name: versatile.app
+    volumes:
+      - .:/var/www/app
+      - ~/.ssh:/home/codions/.ssh
+      - ~/.composer:/home/codions/.composer
+
+      - ./docker/dev/apache/apache2.conf:/etc/apache2/apache2.conf
+      - ./docker/dev/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./docker/dev/apache/ports.conf:/etc/apache2/ports.conf
+      - ./docker/dev/apache/fastcgi.conf:/etc/apache2/mods-available/fastcgi.conf
+
+      - ./docker/dev/php/cli/php.ini:/etc/php/7.1/cli/php.ini
+      - ./docker/dev/php/fpm/php.ini:/etc/php/7.1/fpm/php.ini
+      - ./docker/dev/php/fpm/php-fpm.conf:/etc/php/7.1/fpm/php-fpm.conf
+    ports:
+      - "8080:8080"
+    links:
+      - versatile.db
+      - versatile.smtp
+      - versatile.redis
+
+  versatile.db:
+    image: codions/mysql:5.7
+    container_name: versatile.db
+    volumes:
+      - ./docker/dev/mysql:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_DATABASE=versatile
+      - MYSQL_USER=docker
+      - MYSQL_PASSWORD=_c0d!04s_
+      - MYSQL_ROOT_PASSWORD=_c0d!04s_
+
+  versatile.smtp:
+    image: codions/mailcatcher
+    container_name: versatile.smtp
+    ports:
+      - "1025:1025"
+      - "1080:1080"
+
+  versatile.redis:
+    image: redis:latest
+    container_name: versatile.redis
+    command: --appendonly yes --requirepass _c0d!04s_
+    volumes:
+      - ./docker/dev/redis:/data
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PORT=6379
