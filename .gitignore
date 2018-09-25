@@ -5,7 +5,7 @@
 /public/storage
 /public/vendor
 /storage/*.key
-# /storage/*.index
+/storage/*.index
 /vendor
 /tests
 /.idea
