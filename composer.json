@@ -14,17 +14,17 @@
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
 
-        "versatilelibs/laravel-query-builder": "0.1.*",
-        "versatilelibs/laravel-searchable": "0.1.*",
-        "versatilelibs/laravel-html": "0.1.*",
+        "versatilelibs/laravel-query-builder": "dev-master",
+        "versatilelibs/laravel-searchable": "dev-master",
+        "versatilelibs/laravel-html": "dev-master",
 
-        "versatilecms/core": "0.1.*",
-        "versatilecms/posts": "0.1.*",
-        "versatilecms/forms": "0.1.*",
-        "versatilecms/front": "0.1.*",
-        "versatilecms/pages": "0.1.*",
-        "versatilecms/portfolio": "0.1.*",
-        "versatilecms/themes": "0.1.*"
+        "versatilecms/core": "dev-master",
+        "versatilecms/posts": "dev-master",
+        "versatilecms/forms": "dev-master",
+        "versatilecms/front": "dev-master",
+        "versatilecms/pages": "dev-master",
+        "versatilecms/portfolio": "dev-master",
+        "versatilecms/themes": "dev-master"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4",
