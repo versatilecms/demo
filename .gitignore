@@ -4,7 +4,7 @@
 /public/hot
 /public/storage
 /public/vendor
-# /public/themes
+/public/themes
 /storage/*.key
 /storage/*.index
 /vendor

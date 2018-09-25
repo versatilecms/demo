@@ -14,10 +14,6 @@
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
 
-        "versatilelibs/laravel-query-builder": "dev-master",
-        "versatilelibs/laravel-searchable": "dev-master",
-        "versatilelibs/laravel-html": "dev-master",
-
         "versatilecms/core": "dev-master",
         "versatilecms/posts": "dev-master",
         "versatilecms/forms": "dev-master",
