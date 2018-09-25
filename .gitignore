@@ -4,6 +4,7 @@
 /public/hot
 /public/storage
 /public/vendor
+# /public/themes
 /storage/*.key
 /storage/*.index
 /vendor
@@ -20,3 +21,6 @@ yarn-error.log
 _ide_helper.php
 reset.sh
 hard-reset.sh
+
+config/versatile-*.php
+config/versatile.php
