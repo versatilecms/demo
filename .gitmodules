@@ -1,0 +1,3 @@
+[submodule "Themes/theme-default"]
+	path = Themes/theme-default
+	url = git@github.com:versatilecms/theme-default.git
