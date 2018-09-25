@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "993b2550b0c216b7a4628bb0586eb68a",
+    "content-hash": "39772c65ad93f88543493312c3f349bb",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -3647,12 +3647,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/versatilecms/core.git",
-                "reference": "1b85777483b4203c7189f9dda2032c3408b173c2"
+                "reference": "6edd431641db33cde64ef2f262a8612644a69642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/versatilecms/core/zipball/1b85777483b4203c7189f9dda2032c3408b173c2",
-                "reference": "1b85777483b4203c7189f9dda2032c3408b173c2",
+                "url": "https://api.github.com/repos/versatilecms/core/zipball/6edd431641db33cde64ef2f262a8612644a69642",
+                "reference": "6edd431641db33cde64ef2f262a8612644a69642",
                 "shasum": ""
             },
             "require": {
@@ -3661,7 +3661,10 @@
                 "illuminate/support": "~5.4.0|~5.5.0|~5.6.0",
                 "intervention/image": "^2.4",
                 "larapack/doctrine-support": "~0.1.4",
-                "league/flysystem": "~1.0.41"
+                "league/flysystem": "~1.0.41",
+                "versatilelibs/laravel-html": "0.1.*",
+                "versatilelibs/laravel-query-builder": "0.1.*",
+                "versatilelibs/laravel-searchable": "0.1.*"
             },
             "type": "library",
             "extra": {
@@ -3686,7 +3689,7 @@
                     "email": "fabio23gt@gmail.com"
                 }
             ],
-            "time": "2018-09-25T07:24:04+00:00"
+            "time": "2018-09-25T08:08:17+00:00"
         },
         {
             "name": "versatilecms/forms",
@@ -3932,7 +3935,7 @@
         },
         {
             "name": "versatilelibs/laravel-html",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/versatilelibs/laravel-html.git",
@@ -3980,16 +3983,16 @@
         },
         {
             "name": "versatilelibs/laravel-query-builder",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/versatilelibs/laravel-query-builder.git",
-                "reference": "793858f42a9db08bb7dc0e0c95a6e38dc1d28d76"
+                "reference": "302ab65ac2ec18fd1250e6e77e597b1551d116d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/versatilelibs/laravel-query-builder/zipball/793858f42a9db08bb7dc0e0c95a6e38dc1d28d76",
-                "reference": "793858f42a9db08bb7dc0e0c95a6e38dc1d28d76",
+                "url": "https://api.github.com/repos/versatilelibs/laravel-query-builder/zipball/302ab65ac2ec18fd1250e6e77e597b1551d116d2",
+                "reference": "302ab65ac2ec18fd1250e6e77e597b1551d116d2",
                 "shasum": ""
             },
             "require": {
@@ -4020,20 +4023,20 @@
                 }
             ],
             "description": "Easily build Eloquent queries from API requests",
-            "time": "2018-09-25T03:27:38+00:00"
+            "time": "2018-09-24T20:42:24+00:00"
         },
         {
             "name": "versatilelibs/laravel-searchable",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/versatilelibs/laravel-searchable.git",
-                "reference": "72948e201d16206c6fe7b6d28730b5205a6ecca9"
+                "reference": "b1547daa661ad5dfe45ad16ef7311c13ac956cde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/versatilelibs/laravel-searchable/zipball/72948e201d16206c6fe7b6d28730b5205a6ecca9",
-                "reference": "72948e201d16206c6fe7b6d28730b5205a6ecca9",
+                "url": "https://api.github.com/repos/versatilelibs/laravel-searchable/zipball/b1547daa661ad5dfe45ad16ef7311c13ac956cde",
+                "reference": "b1547daa661ad5dfe45ad16ef7311c13ac956cde",
                 "shasum": ""
             },
             "require": {
@@ -4066,7 +4069,7 @@
                 "search",
                 "searchable"
             ],
-            "time": "2018-09-25T03:27:42+00:00"
+            "time": "2018-09-24T20:33:55+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -6455,9 +6458,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "versatilelibs/laravel-query-builder": 20,
-        "versatilelibs/laravel-searchable": 20,
-        "versatilelibs/laravel-html": 20,
         "versatilecms/core": 20,
         "versatilecms/posts": 20,
         "versatilecms/forms": 20,
